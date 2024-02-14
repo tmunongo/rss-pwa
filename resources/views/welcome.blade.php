@@ -2,5 +2,6 @@
 <head>
     {{-- ... --}}
 
-    @vite(['resources/js/app.js'])
+    @viteReactRefresh
+    @vite(['resources/js/app.tsx'])
 </head>
