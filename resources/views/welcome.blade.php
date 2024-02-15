@@ -1,6 +1,12 @@
 <!doctype html>
+<html>
 <head>
     {{-- ... --}}
 
-    @vite(['resources/js/app.js'])
+    @viteReactRefresh
+    @vite('resources/js/index.tsx')
 </head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
