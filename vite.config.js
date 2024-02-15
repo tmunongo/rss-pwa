@@ -6,7 +6,9 @@ import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/js/app.tsx'],
+            input: [
+                'resources/js/index.tsx',
+            ],
             refresh: true,
         }),
         react(),

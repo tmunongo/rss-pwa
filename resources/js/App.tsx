@@ -2,6 +2,8 @@ import './bootstrap';
 import '../css/app.css';
 
 import React, { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+import { RouterProvider, createRouter } from '@tanstack/react-router';
 
 type Props = {}
 
@@ -15,12 +17,14 @@ declare module '@tanstack/react-router' {
     }
 }
 
-const rootElement = document.getElementById('app')!
-if (!rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement)
-  root.render(
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>,
-  );
+function App() {
+    return (
+        <>
+            <StrictMode>
+                <RouterProvider router={router} />
+            </StrictMode>
+        </>
+    );
 }
+
+export default App;
