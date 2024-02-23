@@ -1,4 +1,7 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, redirect } from '@tanstack/react-router';
+import { useAuth } from '../hooks/authHooks';
+import { isLoggedInAtom } from '../state/authAtoms';
+import { useAtom } from 'jotai';
 
 export const Route = createFileRoute('/')({
   component: Index,

@@ -17,6 +17,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.3)(@types/react@18.2.55)(react@18.2.0)
+  '@tanstack/react-query':
+    specifier: ^5.22.2
+    version: 5.22.2(react@18.2.0)
   '@tanstack/react-router':
     specifier: ^1.16.0
     version: 1.16.0(react-dom@18.2.0)(react@18.2.0)
@@ -35,6 +38,9 @@ dependencies:
   framer-motion:
     specifier: ^11.0.5
     version: 11.0.5(react-dom@18.2.0)(react@18.2.0)
+  jotai:
+    specifier: ^2.6.5
+    version: 2.6.5(@types/react@18.2.55)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -53,7 +59,7 @@ devDependencies:
     specifier: ^4.2.1
     version: 4.2.1(vite@5.1.1)
   axios:
-    specifier: ^1.6.4
+    specifier: ^1.6.7
     version: 1.6.7
   laravel-vite-plugin:
     specifier: ^1.0.0
@@ -1870,6 +1876,19 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
+  /@tanstack/query-core@5.22.2:
+    resolution: {integrity: sha512-z3PwKFUFACMUqe1eyesCIKg3Jv1mysSrYfrEW5ww5DCDUD4zlpTKBvUDaEjsfZzL3ULrFLDM9yVUxI/fega1Qg==}
+    dev: false
+
+  /@tanstack/react-query@5.22.2(react@18.2.0):
+    resolution: {integrity: sha512-TaxJDRzJ8/NWRT4lY2jguKCrNI6MRN+67dELzPjNUlvqzTxGANlMp68l7aC7hG8Bd1uHNxHl7ihv7MT50i/43A==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.22.2
+      react: 18.2.0
+    dev: false
+
   /@tanstack/react-router@1.16.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-jY/mbRsdtIcaj56Jys+pr1Z17rFKIGcOwDTI5V6615e/ZzNUaPRxEvz3dAk3mWDqKNTxBUiCU5UOz5dJKx2UOg==}
     engines: {node: '>=12'}
@@ -2373,6 +2392,22 @@ packages:
     resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
     dependencies:
       hasown: 2.0.1
+    dev: false
+
+  /jotai@2.6.5(@types/react@18.2.55)(react@18.2.0):
+    resolution: {integrity: sha512-T+yvY42GXKomvJYqs+NeTH0da9Z1tQ3Qk3zppPHIWnvmOBKpN6Qd4j8h/oo9dwxs3w/Z5r6Kk0I8h6z5orQ/HQ==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=17.0.0'
+      react: '>=17.0.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.2.55
+      react: 18.2.0
     dev: false
 
   /js-tokens@4.0.0:
