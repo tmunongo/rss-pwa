@@ -1,12 +1,9 @@
-<!doctype html>
-<html>
-<head>
-    {{-- ... --}}
+<x-layouts.app>
+    <x-slot:title>
+        Home
+    </x-slot>
 
-    @viteReactRefresh
-    @vite('resources/js/index.tsx')
-</head>
-<body>
-    <div id="app"></div>
-</body>
-</html>
+    <div>
+        <p class="text-2xl font-bold">Welcome Home!</p></p>
+    </div>
+</x-layouts.app>
