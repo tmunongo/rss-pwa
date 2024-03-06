@@ -25,3 +25,7 @@ Route::group([
     Route::post('refresh', [AuthController::class, 'refresh'])->name('auth.refresh');
     Route::post('me', [AuthController::class, 'me'])->name('auth.me');
 });
+
+Route::middleware('api')->get('/hello', function () {
+    return "Hello sir!";
+});
