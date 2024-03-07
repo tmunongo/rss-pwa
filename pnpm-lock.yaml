@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@alpinejs/persist':
+    specifier: ^3.13.6
+    version: 3.13.6
   alpinejs:
     specifier: ^3.13.6
     version: 3.13.6
@@ -50,6 +53,10 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
     dev: true
+
+  /@alpinejs/persist@3.13.6:
+    resolution: {integrity: sha512-o9GeebMWVnhGzEOnKqQYFs5WvP9ShhXS98/rC0ieDMmoRX9sNGDnKg2TKQLkw3mClovPwQgo7si9nfnT7Jpc5w==}
+    dev: false
 
   /@ampproject/remapping@2.2.1:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}

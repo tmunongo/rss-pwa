@@ -7,7 +7,12 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/App.tsx'])
 </head>
-<body class="flex h-screen">
+<body
+class="flex h-screen"
+x-data="{
+    name: null,
+    token: null,
+}">
     <!-- Sidebar -->
     <aside class="w-1/4 bg-gray-800 text-white p-4">
         <!-- Sidebar content goes here -->
@@ -19,9 +24,17 @@
     </aside>
 
     <!-- Main Content Area -->
-    <main class="w-3/4 p-4">
+    <main
+        class="w-3/4 p-4"
+        x-init="if ($store.user.token === null) location.href = 'auth/login'">
         <!-- Main content goes here -->
         {{ $slot }}
     </main>
+    <script>
+        console.log($store.user);
+        document.addEventListener('load', function() {
+            if ($store.user.token === null) location.href = 'auth/login';
+        })
+    </script>
 </body>
 </html>
